@@ -32,8 +32,8 @@ class Owner(db.Model):
     city = db.Column(db.String(255), nullable=False, unique=True)
     zipCode = db.Column(db.String(255), nullable=False, unique=True)
     phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
-    phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
-    pets = db.relationship("Pet", primaryjoin="[Owner.id==Visit.owner_id]")
+    email = db.Column(db.String(255), nullable=False, unique=True)
+    pets = db.relationship("Pet", primaryjoin="[Owner.id==Pet.owner_id]")
 
     @classmethod
     def create_new_object_factory(cls, my_date_rep):
@@ -94,6 +94,8 @@ class Specialty(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False, unique=True)
     # n-to-m
+    specialties = db.relationship("Vet", primaryjoin="[Vet.id==Vet.owner_id]")
+
 
 class Vet(db.Model):
     __tablename__ = 'application_region'
@@ -104,7 +106,7 @@ class Vet(db.Model):
     firstName = db.Column(db.String(255), nullable=False, unique=True)
     lastName = db.Column(db.String(255), nullable=False, unique=True)
     # n-to-m
-    # specialties = db.relationship("Specialty", primaryjoin="Vet.id==Specialty.owner_id")
+    specialties = db.relationship("Specialty", primaryjoin="[Vet.id==Specialty.owner_id]")
 
 
 class Visit(db.Model):
