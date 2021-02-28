@@ -1,4 +1,5 @@
 graft src/flask_petclinic/static
+graft src/flask_petclinic/templates
 global-exclude *.pyc
 
 include BACKLOG.md
