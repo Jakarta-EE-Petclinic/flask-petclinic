@@ -24,7 +24,19 @@ class Owner(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
+    firstName = db.Column(db.String(255), nullable=False, unique=True)
+    lastName = db.Column(db.String(255), nullable=False, unique=True)
+    address = db.Column(db.String(255), nullable=False, unique=True)
+    houseNumber = db.Column(db.String(255), nullable=False, unique=True)
+    addressInfo = db.Column(db.String(255), nullable=False, unique=True)
+    city = db.Column(db.String(255), nullable=False, unique=True)
+    zipCode = db.Column(db.String(255), nullable=False, unique=True)
+    phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
+    phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
+
+    pets
+
+
 
     @classmethod
     def create_new_object_factory(cls, my_date_rep):
@@ -54,7 +66,10 @@ class Pet(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
+    name = db.Column(db.String(255), nullable=False, unique=True)
+    petType
+    owner
+    visits
 
 
 class PetType(db.Model):
@@ -63,7 +78,7 @@ class PetType(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
+    name = db.Column(db.String(255), nullable=False, unique=True)
 
 
 class Specialty(db.Model):
@@ -72,7 +87,7 @@ class Specialty(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
+    name = db.Column(db.String(255), nullable=False, unique=True)
 
 
 class Vet(db.Model):
@@ -81,7 +96,9 @@ class Vet(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
+    firstName = db.Column(db.String(255), nullable=False, unique=True)
+    lastName = db.Column(db.String(255), nullable=False, unique=True)
+    specialties
 
 
 class Visit(db.Model):
@@ -90,5 +107,6 @@ class Visit(db.Model):
         db.UniqueConstraint('region', name='uix_application_region'),
     )
     id = db.Column(db.Integer, primary_key=True)
-    asdf = db.Column(db.String(255), nullable=False, unique=True)
-
+    date = db.Column(db.String(255), nullable=False, unique=True)
+    description = db.Column(db.String(255), nullable=False, unique=True)
+    pet
