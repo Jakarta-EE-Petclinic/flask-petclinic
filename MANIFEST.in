@@ -1,0 +1,9 @@
+graft src/flask_petclinic/static
+global-exclude *.pyc
+
+include BACKLOG.md
+include LICENSE.md
+include requirements/*.txt
+graft docs
+graft src/tests
+global-exclude *.pyc
