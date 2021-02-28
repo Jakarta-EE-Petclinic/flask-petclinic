@@ -1,7 +1,5 @@
 from flask import render_template, redirect, url_for, flash, Blueprint
 from sqlalchemy.exc import OperationalError
-from celery import states
-from celery.utils.log import get_task_logger
 from flask_admin.contrib.sqla import ModelView
 
 from database import app, admin, db
