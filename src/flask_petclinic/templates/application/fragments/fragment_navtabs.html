@@ -1,0 +1,52 @@
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           href="{{ url_for( 'url_home') }}">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'who.url_who_tasks') }}">
+                            WHO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'ecdc.url_ecdc_tasks') }}">
+                            ECDC
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'owid.url_owid_tasks') }}">
+                            OWID
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'rki_vaccination.url_vaccination_tasks') }}">
+                            RKI Vaccination
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for('rki_bundeslaender.url_rki_bundeslaender_tasks') }}">
+                            RKI Bundeslaender
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'rki_landkreise.url_rki_landkreise_tasks') }}">
+                            RKI Landkreise
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for( 'app_admin.url_admin_tasks') }}">
+                            Admin
+                        </a>
+                    </li>
+                </ul>
+            </nav>
