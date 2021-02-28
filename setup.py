@@ -12,18 +12,6 @@ readme = open("README.md").read()
 history = open("BACKLOG.md").read()
 
 keywords_list = [
-    "virus",
-    "pandemic",
-    "covid19",
-    "corona",
-    "who",
-    "rki",
-    "ecdc",
-    "deaths",
-    "cases",
-    "vaccination",
-    "data",
-    "statistic",
     "python",
     "flask",
     "celery",
@@ -363,7 +351,7 @@ setup(
     license='GNU General Public License v3 (GPLv3)',
     author='Thomas Woehlke',
     author_email='thomas.woehlke@gmail.com',
-    description='Covid19 Data Aggregation - also a Project to learn Python Flask, SQLAlchemy, Celery et al.',
+    description='A Python Flask Version of Spring Petclinic',
     classifiers=[
         "Environment :: Web Environment",
         "Intended Audience :: Developers",

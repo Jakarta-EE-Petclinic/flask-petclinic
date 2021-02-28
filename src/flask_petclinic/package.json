@@ -1,20 +1,13 @@
 {
     "name": "flask-covid19-static",
     "version": "0.0.19",
-    "description": "Covid19 Data Aggregation - also a Project to learn Python Flask, SQLAlchemy, Celery et al.",
+    "description": "A Python Flask Version of Spring Petclinic",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/thomaswoehlke/covid19python/covid19/static"
+        "url": "https://github.com/Jakarta-EE-Petclinic/flask-petclinic/flask_petclinic/static"
     },
     "keywords": [
-        "virus",
-        "pandemic",
-        "covid19",
-        "data",
-        "statistic",
-        "who",
-        "rki",
         "python",
         "flask",
         "sqlalchemy",
