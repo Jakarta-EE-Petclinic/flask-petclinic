@@ -33,7 +33,7 @@ class Owner(db.Model):
     zipCode = db.Column(db.String(255), nullable=False, unique=True)
     phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
     phoneNumber = db.Column(db.String(255), nullable=False, unique=True)
-    pets = db.relationship("Pet", primaryjoin="Owner.id==Visit.owner_id")
+    pets = db.relationship("Pet", primaryjoin="[Owner.id==Visit.owner_id]")
 
     @classmethod
     def create_new_object_factory(cls, my_date_rep):
@@ -74,7 +74,7 @@ class Pet(db.Model):
     owner_id = db.Column(db.Integer, db.ForeignKey('petclinic_owner.id'), nullable=False)
     owner = db.relationship('Owner', foreign_keys="[Pet.owner_id]",
                             lazy='joined', cascade='all, delete', order_by='Owner.lastName')
-    visits = db.relationship("Visit", primaryjoin="Pet.id==Visit.pet_id")
+    visits = db.relationship("Visit", primaryjoin="[Pet.id==Visit.pet_id]")
 
 
 class PetType(db.Model):
