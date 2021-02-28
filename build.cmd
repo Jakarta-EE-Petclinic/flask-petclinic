@@ -1,7 +1,7 @@
 rem deactivate
 rem rm -rf venv
-py -3 -m venv venv
-venv\Scripts\activate
+rem py -3 -m venv venv
+rem venv\Scripts\activate
 
 pip-compile -r requirements\build.in
 pip-compile -r requirements\docs.in
