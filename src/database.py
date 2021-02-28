@@ -9,8 +9,6 @@ from flask_bs4 import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from logging.config import dictConfig
 from flask_admin import Admin
-from celery import Celery
-from celery.utils.log import LoggingProxy
 
 # board = RedisBoardExtension()
 # pm = PluginManager()

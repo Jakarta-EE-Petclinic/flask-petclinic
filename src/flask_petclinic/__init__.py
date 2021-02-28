@@ -1,6 +1,6 @@
 from database import app, run_run_with_debug, port
 
-import covid19.blueprints.application.application_views
+import flask_petclinic.application_views
 
 
 def run_web():

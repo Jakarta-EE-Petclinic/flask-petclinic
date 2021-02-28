@@ -1,8 +1,8 @@
 from database import app, run_run_with_debug, port
-import covid19
-import covid19.blueprints.application.application_views
+import flask_petclinic
+import flask_petclinic.application_views
 
-from covid19 import run_web
+from flask_petclinic import run_web
 
 # https://realpython.com/pytest-python-testing/
 # https://www.guru99.com/pytest-tutorial.html

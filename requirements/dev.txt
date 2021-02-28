@@ -4,16 +4,10 @@
 #
 #    pip-compile 'requirements\dev.in'
 #
-aiocronjob==0.2.6
-    # via -r requirements\dev.in
-aiofiles==0.5.0
-    # via aiocronjob
 alabaster==0.7.12
     # via sphinx
 alembic==1.5.4
     # via flask-db
-amqp==5.0.5
-    # via kombu
 appdirs==1.4.4
     # via virtualenv
 apscheduler==3.7.0
@@ -31,12 +25,8 @@ babel==2.9.0
     # via
     #   flask-babel
     #   sphinx
-billiard==3.6.3.0
-    # via celery
 blinker==1.4
     # via flask-whooshalchemy3
-celery[redis]==5.0.5
-    # via -r requirements\dev.in
 certifi==2020.12.5
     # via
     #   pipenv
@@ -49,23 +39,12 @@ chardet==3.0.4
     #   requests
 cleo==0.8.1
     # via plantuml2freemind
-click-didyoumean==0.0.3
-    # via celery
-click-plugins==1.1.1
-    # via celery
-click-repl==0.1.6
-    # via celery
 click==7.1.2
     # via
-    #   celery
-    #   click-didyoumean
-    #   click-plugins
-    #   click-repl
     #   flask
     #   flask-monitoring
     #   manual-sitemap
     #   pip-tools
-    #   uvicorn
 clikit==0.6.2
     # via cleo
 colorama==0.4.4
@@ -78,18 +57,12 @@ configparser==5.0.1
     # via flask-monitoring
 crashtest==0.3.1
     # via clikit
-crontab==0.22.9
-    # via aiocronjob
-cycler==0.10.0
-    # via matplotlib
 distlib==0.3.1
     # via virtualenv
 docutils==0.16
     # via sphinx
 dominate==2.6.0
     # via flask-bs4
-fastapi==0.55.1
-    # via aiocronjob
 filelock==3.0.12
     # via virtualenv
 flask-admin==1.5.7
@@ -159,8 +132,6 @@ flask==1.1.2
     #   flask-whooshalchemy3
     #   flask-wtf
     #   pytest-flask
-h11==0.9.0
-    # via uvicorn
 httplib2==0.19.0
     # via plantuml
 identify==1.5.13
@@ -183,27 +154,9 @@ jinja2==2.11.3
     # via
     #   flask
     #   flask-babel
-    #   pyecharts
-    #   reactive-pyecharts
     #   sphinx
-joblib==1.0.1
-    # via
-    #   pynndescent
-    #   scikit-learn
 json2html==1.3.0
     # via flask-responsebuilder
-jsonpatch==1.28
-    # via visdom
-jsonpointer==2.0
-    # via jsonpatch
-kiwisolver==1.3.1
-    # via matplotlib
-kombu==5.0.2
-    # via celery
-llvmlite==0.35.0
-    # via
-    #   numba
-    #   pynndescent
 mako==1.1.4
     # via alembic
 manual-sitemap==19.6.0
@@ -217,8 +170,6 @@ markupsafe==1.1.1
     #   wtforms
 marshmallow==3.10.0
     # via flask-resources
-matplotlib==3.3.4
-    # via statisticaldiagrams
 mirakuru==2.3.0
     # via pytest-postgresql
 more-itertools==8.0.2
@@ -230,20 +181,8 @@ more-itertools==8.0.2
     #   zipp
 nodeenv==1.5.0
     # via pre-commit
-numba==0.52.0
-    # via pynndescent
 numpy==1.20.1
-    # via
-    #   -r requirements\dev.in
-    #   flask-monitoring
-    #   matplotlib
-    #   numba
-    #   pandas
-    #   scikit-learn
-    #   scipy
-    #   statisticaldiagrams
-    #   torch
-    #   visdom
+    # via flask-monitoring
 packaging==20.0
     # via
     #   -r requirements\build.in
@@ -254,8 +193,6 @@ packaging==20.0
     #   sphinx
 pallets-sphinx-themes==1.2.3
     # via -r requirements\docs.in
-pandas==1.2.2
-    # via -r requirements\dev.in
 pastel==0.2.1
     # via clikit
 pbr==3.1.1
@@ -263,10 +200,6 @@ pbr==3.1.1
     #   -r requirements\build.in
     #   flask-whooshalchemy3
     #   sphinxcontrib-gravizo
-pillow==8.1.0
-    # via
-    #   matplotlib
-    #   visdom
 pip-licenses==3.3.0
     # via -r requirements\build.in
 pip-tools==5.5.0
@@ -293,12 +226,6 @@ port-for==0.4
     # via pytest-postgresql
 pre-commit==2.10.1
     # via -r requirements\build.in
-prettytable==2.0.0
-    # via
-    #   pyecharts
-    #   reactive-pyecharts
-prompt-toolkit==3.0.16
-    # via click-repl
 psutil==5.8.0
     # via
     #   flask-monitoring
@@ -315,27 +242,16 @@ py==1.8.1
     #   pytest
 pyaml==20.4.0
     # via pytoolbox
-pydantic==1.7.3
-    # via fastapi
-pyecharts-extras==0.0.5
-    # via -r requirements\dev.in
-pyecharts==1.9.0
-    # via
-    #   -r requirements\dev.in
-    #   pyecharts-extras
 pygments==2.8.0
     # via
     #   sphinx
     #   sphinx-tabs
 pylev==1.3.0
     # via clikit
-pynndescent==0.5.2
-    # via -r requirements\dev.in
 pyparsing==2.4.6
     # via
     #   -r requirements\build.in
     #   httplib2
-    #   matplotlib
     #   packaging
     #   plantuml-creator
 pytest-enabler==1.2.0
@@ -362,10 +278,7 @@ pytest==5.3.2
     #   pytest-postgresql
     #   pytest-venv
 python-dateutil==2.8.1
-    # via
-    #   alembic
-    #   matplotlib
-    #   pandas
+    # via alembic
 python-dotenv==0.15.0
     # via -r requirements\tests.in
 python-editor==1.0.4
@@ -381,13 +294,10 @@ pytoolbox==14.0.0
 pytz==2020.5
     # via
     #   -r requirements\dev.in
-    #   aiocronjob
     #   apscheduler
     #   babel
-    #   celery
     #   flask-babel
     #   flask-monitoring
-    #   pandas
     #   pytoolbox
     #   tzlocal
 pyyaml==5.4.1
@@ -397,42 +307,22 @@ pyyaml==5.4.1
     #   pre-commit
     #   pyaml
     #   python-frontmatter
-pyzmq==22.0.3
-    # via visdom
-reactive-pyecharts==1.0.0
-    # via -r requirements\dev.in
 redis==3.5.3
-    # via
-    #   celery
-    #   flask-redisboard
+    # via flask-redisboard
 requests==2.25.1
     # via
     #   pytoolbox
     #   sphinx
-    #   visdom
 ruamel-yaml==0.16.12
     # via flask-filealchemy
 ruamel.yaml.clib==0.2.2
     # via ruamel-yaml
-scikit-learn==0.24.1
-    # via pynndescent
-scipy==1.6.0
-    # via
-    #   -r requirements\dev.in
-    #   pynndescent
-    #   scikit-learn
-    #   statisticaldiagrams
-    #   visdom
 semver==2.13.0
     # via flask-pluginkit
-simplejson==3.17.2
-    # via pyecharts
 six==1.13.0
     # via
     #   -r requirements\build.in
     #   apscheduler
-    #   click-repl
-    #   cycler
     #   flask-cors
     #   flask-fixtures
     #   packaging
@@ -441,8 +331,6 @@ six==1.13.0
     #   python-frontmatter
     #   sqlalchemy-utils
     #   virtualenv
-    #   visdom
-    #   websocket-client
 snowballstemmer==2.1.0
     # via sphinx
 speaklater==1.3
@@ -491,46 +379,26 @@ sqlalchemy==1.3.23
     #   flask-whooshalchemy3
     #   pytest-flask-sqlalchemy
     #   sqlalchemy-utils
-starlette==0.13.2
-    # via fastapi
-statisticaldiagrams==20.5
-    # via -r requirements\dev.in
 str2bool==1.1
     # via plantuml-creator
 stringcase==1.2.0
     # via plantuml-creator
-threadpoolctl==2.1.0
-    # via scikit-learn
 tokenize-rt==4.1.0
     # via -r requirements\docs.in
 toml==0.10.2
     # via
     #   pre-commit
     #   pytest-enabler
-torch==1.7.1
-    # via -r requirements\dev.in
-torchfile==0.1.0
-    # via visdom
-tornado==6.1
-    # via visdom
 typing-extensions==3.7.4.3
-    # via
-    #   plantuml2freemind
-    #   torch
+    # via plantuml2freemind
 tzlocal==2.1
     # via
     #   apscheduler
     #   flask-monitoring
 urllib3==1.26.3
     # via requests
-uvicorn==0.11.8
-    # via aiocronjob
 venv-run==0.1.0
     # via -r requirements\build.in
-vine==5.0.0
-    # via
-    #   amqp
-    #   celery
 virtualenv-clone==0.5.4
     # via pipenv
 virtualenv==20.4.2
@@ -539,26 +407,16 @@ virtualenv==20.4.2
     #   pipenv
     #   pre-commit
     #   pytest-venv
-visdom==0.1.8.9
-    # via -r requirements\dev.in
 visitor==0.1.3
     # via flask-bs4
 wcwidth==0.1.8
     # via
     #   plantuml-creator
-    #   prettytable
-    #   prompt-toolkit
     #   pytest
-websocket-client==0.57.0
-    # via visdom
-websockets==8.1
-    # via uvicorn
 werkzeug==1.0.1
     # via
     #   flask
     #   pytest-flask
-wget==3.2
-    # via -r requirements\dev.in
 wheel==0.36.2
     # via -r requirements\build.in
 whoosh==2.7.4

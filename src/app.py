@@ -1,8 +1,7 @@
 import sys
 import subprocess
-import covid19
-import covid19_worker
-from covid19.blueprints.application.application_workers import app, run_app, celery
+import flask_petclinic
+from flask_petclinic.application_service import app, run_app
 
 # ---------------------------------------------------------------------------------
 #  MAIN
